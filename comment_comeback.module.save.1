@@ -1,0 +1,15 @@
+<?php 
+// Para volver a la vista
+function comment_comeback_form_comment_form_alter(&$form, &$form_state, $form_id){
+$form['#submit'][] = 'submitForm';
+//$node->field_project_nid;
+}
+
+function submitForm($form, &$form_state) {
+$uids= array();
+foreach ($info as $field_project) {
+
+$form_state['redirect'] = array(
+	'stories/',
+	
+}
